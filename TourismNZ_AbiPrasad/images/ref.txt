@@ -44,9 +44,3 @@ g17 https://pixabay.com/en/otago-region-new-zealand-2143799/
 pop https://pngtree.com/free-icon/population-overview_108320
 plane https://clipartimage.com/images/clipart-256541.html
 airplane https://www.freeiconspng.com/img/27942
-planelogo_## https://www.aucklandairport.co.nz/flights
-
-gallerylong https://pixabay.com/en/milky-way-galaxy-night-sky-stars-984050/#
-gallerylongkk https://pixabay.com/en/night-sky-galaxy-space-astronomy-1031446/
-
-ok https://pixabay.com/en/new-zealand-franz-josef-glacier-3679420/
