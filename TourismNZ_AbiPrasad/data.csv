@@ -1,4 +1,10 @@
-car name,miles/gallon,cylinders,displacement,horsepower,weight,acceleration,model year,origin
-"chevrolet chevelle malibu",18,8,307,130,3504,12,70,1
-"buick skylark 320",15,8,350,165,3693,11.5,70,1
-"plymouth satellite",18,8,318,150,3436,11,70,1
+Attraction Name,City/region,Description,Typical age,Energy/exertion
+Rainbow's End,"2 Clist Cres, Manukau, Auckland 2104",Theme Park,7 to 45   ,Mid
+Hobbiton Movie Set,"501 Buckland Rd, Hinuera, Matamata 3472",Movie Set,15 to 65,Low
+Mount Maunganui Main Beach,"Mount Maunganui, Tauranga 3116",Beach,1 to 70,Low
+Orakei Korako Geothermal,"494 Orakeikorako Rd, Taupo 3083",Park,3 to 40,Low
+Mitai Maori Village,"196 Fairy Springs Rd, Fairy Springs, Rotorua 3015",Village ,0 to 80,Mid
+Blue Spring ,"Leslie Rd, South Waikato 3483",Natural spring ,1 to 69,Low
+McLaren Falls,"Mclaren Falls Rd, Lower Kaimai 3171",Natural Waterfall0-67,1 to 65,Low
+Oropi Mountain bike park,"Oropi Rd, Oropi 3173",Bike Park,7  to 28,High
+Skyline Rotorua,"178 Fairy Springs Rd, Fairy Springs, Rotorua 3015",Luge & Gondola,1 to 65,High

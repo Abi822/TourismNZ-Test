@@ -19,7 +19,7 @@
         <h1>WELCOME!</h1>
         <p>Tourism in New Zealand</p>
         <a onclick="topFunction()" class="menuDown">
-            <img src="images/arrow-down.png" alt="Arrow Down Icon" >
+            <img src="images/arrow-down.png" alt="Arrow Down Icon">
         </a>
     </div>
 
@@ -48,9 +48,16 @@
     </ul>
 
     <div id="container">
+
+        <div id="sidecontainer">
+            <div class="imgzoomcontainer">
+                <img id="myimage" src="images/gallerylong.png" style="width:100%">
+                <div id="myresult" class="imgresult"></div>
+            </div>
+        </div>
+
         <br>
         <h2>Picture List</h2>
-
 
         <div id="imagegridcontainer">
             <div class="column">
@@ -90,13 +97,16 @@
 
     <div id="footercontainer">
         <footer>
-            <!––<img src="images\logo.png" />
+            <div class="logo">
+                <img src="images\logo.png" />
+            </div>
             <br>
             <div class="copyright">© 2018 Abi Prasad All Right Reserved</div>
-            <div class="socal">Abi Prasad Tourism NZ</div>
         </footer>
     </div>
-
+    <script>
+        imageZoom("myimage", "myresult");
+    </script>
     <button id="slide-top" title="Back to top">&#x276f;</button>
 </body>
 

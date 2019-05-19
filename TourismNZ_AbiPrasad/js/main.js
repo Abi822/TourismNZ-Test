@@ -173,13 +173,6 @@ $(function () {
     }
 });
 
-jQuery(document).ready(function ($) {
-    numcounter();
-    setInterval(function () {
-        $(".people").removeClass("k");       
-    }, 700);
-});
-
 function mytable() {
     d3.text("data.csv", function (data) {
         var parsedCSV = d3.csv.parseRows(data);
@@ -192,23 +185,84 @@ function mytable() {
             .data(function (d) { return d; }).enter()
             .append("td")
             .text(function (d) { return d; });
-    });            
-}
-
-function numcounter() {
-    $('.count').each(function () {
-        $(this).prop('Counter', 0).animate({
-            Counter: $(this).text()
-        }, {
-                duration: 2600,
-                easing: 'swing',
-                step: function (now) {
-                    $(this).text(Math.ceil(now));
-                }
-            });
-
     });
 }
 
+jQuery(document).ready(function ($) {
+    numcounter();
+});
 
+function numcounter() {
+    setTimeout(function () {
+        $('.count').each(function () {
+            $(this).prop('Counter', 0).animate({
+                Counter: $(this).text()
+            }, {
+                    duration: 5600,
+                    easing: 'swing',
+                    step: function (now) {
+                        $(this).text(Math.ceil(now));
+                    }
+                });
+        });
+    }, 1900);
+}
 
+$(document).ready(function () {
+
+    $(window).scroll(function () {
+
+        var height = $('.first-container').height();
+        var scrollTop = $(window).scrollTop();
+
+        if (scrollTop >= height - 40) {
+            $('.nav-container').addClass('solid-nav');
+        } else {
+            $('.nav-container').removeClass('solid-nav');
+        }
+
+    });
+});
+
+function imageZoom(imgID, resultID) {
+  var img, lens, result, cx, cy;
+  img = document.getElementById(imgID);
+  result = document.getElementById(resultID);
+  lens = document.createElement("DIV");
+  lens.setAttribute("class", "imgzoomlens");
+  img.parentElement.insertBefore(lens, img);
+  cx = result.offsetWidth / lens.offsetWidth;
+  cy = result.offsetHeight / lens.offsetHeight;
+  result.style.backgroundImage = "url('" + img.src + "')";
+  result.style.backgroundSize = (img.width * cx) + "px " + (img.height * cy) + "px";
+  lens.addEventListener("mousemove", moveLens);
+  img.addEventListener("mousemove", moveLens);
+  lens.addEventListener("touchmove", moveLens);
+  img.addEventListener("touchmove", moveLens);
+  
+  function moveLens(e) {
+    var pos, x, y;
+    e.preventDefault();
+    pos = getCursorPos(e);
+    x = pos.x - (lens.offsetWidth / 2);
+    y = pos.y - (lens.offsetHeight / 2);
+    if (x > img.width - lens.offsetWidth) {x = img.width - lens.offsetWidth;}
+    if (x < 0) {x = 0;}
+    if (y > img.height - lens.offsetHeight) {y = img.height - lens.offsetHeight;}
+    if (y < 0) {y = 0;}
+    lens.style.left = x + "px";
+    lens.style.top = y + "px";
+    result.style.backgroundPosition = "-" + (x * cx) + "px -" + (y * cy) + "px";
+  }
+  
+  function getCursorPos(e) {
+    var a, x = 0, y = 0;
+    e = e || window.event;
+    a = img.getBoundingClientRect();
+    x = e.pageX - a.left;
+    y = e.pageY - a.top;
+    x = x - window.pageXOffset;
+    y = y - window.pageYOffset;
+    return {x : x, y : y};
+  }
+}
