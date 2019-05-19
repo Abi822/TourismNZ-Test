@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link href="css/aos.css" rel="stylesheet" type="text/css">
+    <script src="js/aos.js"></script>
+    <script src="js\jquery-3.3.1.js"></script>
+    <script src="js\main.js"></script>
+    <title>Tourism</title>
+</head>
+
+<body>
+    <div class="header5">
+        <h1>WELCOME!</h1>
+        <p>Tourism in New Zealand</p>
+        <a onclick="topFunction()" class="menuDown">
+            <img src="images/arrow-down.png" alt="Arrow Down Icon">
+        </a>
+    </div>
+
+    <ul class="menu">
+        <li class="menulist">
+            <a href="index.html">Home</a>
+        </li>
+        <li class="menulist">
+            <a href="page1.html">NZTourism</a>
+        </li>
+        <li class="menulist">
+            <a href="page2.html">Destinations</a>
+        </li>
+        <li class="menulist">
+            <a href="page3.html">Music & Videos</a>
+        </li>
+        <li class="menulist">
+            <a href="page4.html">Gallery</a>
+        </li>
+        <li class="menulist">
+            <a class="active" href="page5.html">Overseas</a>
+        </li>
+        <li class="menulist">
+            <a href="page6.html">Reference</a>
+        </li>
+    </ul>
+
+    <div id="container">
+        <br>
+        <h2>Venice</h2>
+
+        <section id="slider" class="slidecontainer">
+            <ul class="slider-wrapper">
+                <li class="current-slide">
+                    <img src="images/1_slider.jpg" title="" alt="">
+                    <div class="caption">
+                        <hslide class="slider-title">Canal Grande</hslide>
+                        <p>The town of Canal Water Boats!</p>
+                    </div>
+                </li>
+                <li>
+                    <img src="images/2_slider.jpg" title="" alt="">
+                    <div class="caption">
+                        <hslide class="slider-title">Island to island, Bridge to Bridge</hslide>
+                        <p>Standing between two Islands!</p>
+                    </div>
+                </li>
+                <li>
+                    <img src="images/3_slider.jpg" title="" alt="">
+                    <div class="caption">
+                        <hslide class="slider-title">Boats and shops</hslide>
+                        <p>Boats parked on the side of the Canal!</p>
+                    </div>
+                </li>
+                <li>
+                    <img src="images/4_slider.jpg" title="" alt="">
+                    <div class="caption">
+                        <hslide class="slider-title">Into The town</hslide>
+                        <p>Defferent kinds of boats and Architectul buildings!</p>
+                    </div>
+                </li>
+                <li>
+                    <img src="images/5_slider.jpg" title="" alt="">
+                    <div class="caption">
+                        <hslide class="slider-title">The beautiful sunset</hslide>
+                        <p>Busy footparth and boats coming through the canals!</p>
+                    </div>
+                </li>
+                <li>
+                    <img src="images/6_slider.jpg" title="" alt="">
+                    <div class="caption">
+                        <hslide class="slider-title">The sunrise in the sea</hslide>
+                        <p>Saint Mark's Basilica building with boats and kayaks!</p>
+                    </div>
+                </li>
+            </ul>
+            <div class="slider-shadow"></div>
+            <ul id="control-buttons" class="control-buttons"></ul>
+        </section>
+
+        <br>
+        <br>
+
+        <h3>Venice Information</h3>
+        <p>
+            Venice is the capital of Veneto region, it lays in the northern Italy. Venice contains 118 small islands in a lagoon in the
+            Adriatic Sea, people travel across the island using boats and kayaks. There are very little to no roads but there
+            over are 400 bridges separated by canals, all linked together surrounding Venice from island to island.
+        </p>
+
+        <p>
+            Venice is renowned for the beauty of their settings, their architecture, and artwork as it known as the City of Water. Venice
+            is more then 260,000 and is still growing. The Center of Venice is the Piazza San Marco which is known as one
+            of the finest squares in Europe.
+        </p>
+
+        <br>
+
+        <h2>Me</h2>
+
+        <p>
+            Places where I would visit are Piazza San Marco where you can find a massive grand building where it serves lots of purpose,
+            in English known as St Mark's Square. At the Piazza San Marco I would like to take pictures of me behind the
+            mega squire building, also look at the culture around squire as people tend to dress up and put on masks. Other
+            pleases I wish to visit are Palazzo Ducale and Campanile. Palazzo Ducale is known as Doge's Palace which I will
+            like a tour of the interior and the treasures.
+        </p>
+
+        <br>
+
+        <div id="map"></div>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCNd9EJkaaz5TGZoAwa2jFKctjQyfjfwrU&callback=initMap"></script>
+
+        <br>
+        <br>
+        <br>
+
+
+        <div class="flagscontainer" data-aos="zoom-in-up">
+            <h2>Flag of Venice</h2>
+            <img class="flags" src="images\venice flag.png" alt="venice flag">
+        </div>
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+    </div>
+
+    <div id="footercontainer">
+        <footer>
+            <div class="logo">
+                <img src="images\logo.png" />
+            </div>
+            <br>
+            <div class="copyright">© 2018 Abi Prasad All Right Reserved</div>
+        </footer>
+    </div>
+
+    <script>
+        AOS.init({
+            duration: 1500,
+        })
+    </script>
+    <button id="slide-top" title="Back to top">&#x276f;</button>
+</body>
+
+</html>
